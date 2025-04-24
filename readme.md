@@ -1,2 +1,2 @@
 # Skillvance Web
-Platform pelatihan modern untuk semua kalangan.
+A Platform for Upgrading Skill To Advance
