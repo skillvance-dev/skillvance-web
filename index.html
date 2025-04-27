@@ -1,113 +1,76 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skillvance</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom right, #e4f0ff, #ffffff);
-      color: #1a1a1a;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    header img {
-      height: 48px;
-      margin-right: 1rem;
-    }
-    header .tagline {
-      font-size: 0.9rem;
-      color: #555;
-    }
-    .hero {
-      text-align: center;
-      padding: 5rem 2rem;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-    }
-    .hero button {
-      background-color: #3b82f6;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .features, .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .card {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillvance Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="/logo.png" alt="Skillvance Logo">
-    <div>
-      <strong>Skillvance</strong><br>
-      <span class="tagline">A Platform for Upgrading Skill To Advance</span>
-    </div>
-  </header>
+    <header class="header">
+        <div class="container">
+            <img src="logo-skillvance.png" alt="Skillvance Logo" class="logo">
+            <div class="header-text">
+                <h1>Skillvance</h1>
+                <p>A Platform for Upgrading Skill To Advance</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Mentoring</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="signup">Daftar</a>
+            </div>
+        </div>
+    </header>
 
-  <section class="hero">
-    <h1>Skillvance Academy</h1>
-    <p>Platform pelatihan modern untuk Lean, TPM, Six Sigma, HR, HSE, QC Tools, dan banyak lagi.</p>
-    <button>Mulai Sekarang</button>
-  </section>
+    <main class="main-content">
+        <h2>Skillvance Blog</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search articles...">
+            <button>🔍</button>
+        </div>
 
-  <section class="section">
-    <h2>Fitur Unggulan</h2>
-    <div class="features">
-      <div class="card">Video Pembelajaran</div>
-      <div class="card">Sertifikat Digital</div>
-      <div class="card">Forum Diskusi</div>
-      <div class="card">Live Class & Webinar</div>
-      <div class="card">AI Chatbot</div>
-    </div>
-  </section>
+        <div class="content">
+            <div class="blog-posts">
+                <article class="post">
+                    <img src="sop-post.png" alt="SOP">
+                    <h3>Kekuatan Prosedur Operasi Standar</h3>
+                    <p>Pelajari pentingnya Prosedur Operasional Standar (SOP) dalam operasional bisnis modern. Temukan bagaimana SOP mendukung kejelasan, konsistensi, kepatuhan, dan peningkatan kinerja.</p>
+                    <small>Category: Project Management</small>
+                </article>
+            </div>
 
-  <section class="section">
-    <h2>Kategori Pelatihan</h2>
-    <div class="categories">
-      <div class="card">Lean Manufacturing</div>
-      <div class="card">TPM</div>
-      <div class="card">Six Sigma</div>
-      <div class="card">HR & Leadership</div>
-      <div class="card">HSE</div>
-      <div class="card">SCM</div>
-      <div class="card">QC Tools</div>
-      <div class="card">Continuous Improvement</div>
-    </div>
-  </section>
+            <aside class="sidebar">
+                <div class="categories">
+                    <h4>Top Categories</h4>
+                    <ul>
+                        <li>Artificial Intelligence (2)</li>
+                        <li>Learning & Development Strategies (2)</li>
+                        <li>Supply Chain Management (1)</li>
+                        <li>Personal Development (1)</li>
+                        <li>Online Learning & eLearning (1)</li>
+                    </ul>
+                    <a href="#">View all categories</a>
+                </div>
+
+                <div class="popular-posts">
+                    <h4>Popular Posts</h4>
+                    <p>Mengapa Menuntut Ilmu Itu Penting?</p>
+                    <small>Oct 04, 2024</small>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Skillvance. All rights reserved.</p>
+    </footer>
 </body>
 </html>
