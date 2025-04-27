@@ -1,1 +1,85 @@
-body { font-family: sans-serif; background: #f7f9fc; }
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skillvance - A Platform for Upgrading Skill to Advance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo-skillvance.png" alt="Skillvance Logo">
+      <h1>Skillvance</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Mentoring</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#" class="login">Login</a>
+      <a href="#" class="register">Daftar</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <h2 class="main-title">Skillvance Blog</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Cari kursus atau artikel di Skillvance...">
+      <button type="submit">
+        🔍
+      </button>
+    </div>
+
+    <section class="featured-post">
+      <div class="post-info">
+        <div class="author">
+          <img src="author-placeholder.png" alt="Author">
+          <div>
+            <p>Idadh Ibrahim</p>
+            <small>Jan 10 • 3 min read</small>
+          </div>
+        </div>
+        <h3>Kekuatan Prosedur Operasi Standar: Untuk menerangi jalannya aktivitas, bukan untuk menghalanginya</h3>
+        <p>Pelajari pentingnya Prosedur Operasional Standar (SOP) dalam operasional bisnis modern. Temukan bagaimana SOP mendukung kejelasan, konsistensi, kepatuhan, dan pengembangan...</p>
+        <span class="category">Project Management</span>
+        <div class="post-stats">
+          <span>1.1k</span>
+          <span>1</span>
+          <span>0</span>
+        </div>
+      </div>
+      <div class="post-image">
+        <img src="sop-placeholder.png" alt="Standard Operation Procedure">
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <h4>Top Categories</h4>
+      <ul>
+        <li>Artificial Intelligence (2)</li>
+        <li>Learning & Development Strategies (2)</li>
+        <li>Supply Chain Management (1)</li>
+        <li>Personal Development (1)</li>
+        <li>Online Learning & eLearning (1)</li>
+      </ul>
+      <a href="#">View all categories</a>
+
+      <h4>Popular Posts</h4>
+      <div class="popular-post">
+        <img src="popular-placeholder.png" alt="Popular Post">
+        <p>Mengapa Menuntut Ilmu Itu Penting?<br><small>Oct 04, 2024</small></p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Skillvance. All rights reserved.</p>
+  </footer>
+</body>
+</html>
