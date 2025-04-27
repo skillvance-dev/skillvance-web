@@ -1,113 +1,55 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skillvance</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom right, #e4f0ff, #ffffff);
-      color: #1a1a1a;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    header img {
-      height: 48px;
-      margin-right: 1rem;
-    }
-    header .tagline {
-      font-size: 0.9rem;
-      color: #555;
-    }
-    .hero {
-      text-align: center;
-      padding: 5rem 2rem;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-    }
-    .hero button {
-      background-color: #3b82f6;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .features, .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .card {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-  </style>
+  <title>CTC Course - A Platform for Upgrading Skill to Advance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="/logo.png" alt="Skillvance Logo">
-    <div>
-      <strong>Skillvance</strong><br>
-      <span class="tagline">A Platform for Upgrading Skill To Advance</span>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">CTC <span>Course</span></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Mentoring</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="register">Daftar</a>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <h1>Skillvance Academy</h1>
-    <p>Platform pelatihan modern untuk Lean, TPM, Six Sigma, HR, HSE, QC Tools, dan banyak lagi.</p>
-    <button>Mulai Sekarang</button>
-  </section>
+  <main class="main-content">
+    <section class="hero">
+      <h1>Welcome to CTC Course</h1>
+      <p>A Platform for Upgrading Skill to Advance</p>
+    </section>
 
-  <section class="section">
-    <h2>Fitur Unggulan</h2>
-    <div class="features">
-      <div class="card">Video Pembelajaran</div>
-      <div class="card">Sertifikat Digital</div>
-      <div class="card">Forum Diskusi</div>
-      <div class="card">Live Class & Webinar</div>
-      <div class="card">AI Chatbot</div>
-    </div>
-  </section>
+    <section class="blog-preview">
+      <h2>Latest Blog</h2>
+      <div class="blog-card">
+        <img src="/img/sample-blog.jpg" alt="Blog Image">
+        <div class="blog-info">
+          <h3>Kekuatan Prosedur Operasi Standar: Untuk menerangi jalan aktivitas</h3>
+          <p>Pelajari pentingnya Prosedur Operasional Standar (SOP) dalam operasional bisnis modern...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <section class="section">
-    <h2>Kategori Pelatihan</h2>
-    <div class="categories">
-      <div class="card">Lean Manufacturing</div>
-      <div class="card">TPM</div>
-      <div class="card">Six Sigma</div>
-      <div class="card">HR & Leadership</div>
-      <div class="card">HSE</div>
-      <div class="card">SCM</div>
-      <div class="card">QC Tools</div>
-      <div class="card">Continuous Improvement</div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CTC Course. All rights reserved.</p>
     </div>
-  </section>
+  </footer>
 </body>
 </html>
