@@ -14,6 +14,20 @@ header {
   border-bottom: 1px solid #ddd;
   height: 80px; /* Batasi tinggi header */
   box-sizing: border-box;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, #ffffff, #f0f4f8);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  height: 80px;
+  box-sizing: border-box;
+}
+
 }
 
 .logo-container {
