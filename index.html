@@ -30,7 +30,51 @@
           <i class="fas fa-user-plus"></i> Daftar
           </a>
         </div>
-        <li><a href="#">Login/Daftar</a></li>
+        <style>
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn-login {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #333;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .btn-login:hover {
+    background-color: #f0f0f0;
+  }
+
+  .btn-register {
+    display: flex;
+    align-items: center;
+    padding: 8px 18px;
+    font-size: 14px;
+    background: #5b4ce9;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .btn-register:hover {
+    background: #483ac7;
+  }
+
+  .btn-login i,
+  .btn-register i {
+    margin-right: 8px;
+  }
+</style>
       </ul>
     </nav>
   </header>
