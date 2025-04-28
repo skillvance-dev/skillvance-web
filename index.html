@@ -3,165 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skillvance - Upgrade Your Skill</title>
+  <title>Skillvance Academy</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* Reset dan basic */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Header */
-    header {
-      background: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .logo-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .logo-header img {
-      height: 40px;
-    }
-
-    .header-text h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-
-    .header-text p {
-      font-size: 0.8rem;
-      color: #666;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    .nav-links a {
-      color: #333;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .nav-links a:hover {
-      color: #3366ff;
-    }
-
-    /* Hero Section */
-    .hero {
-      background-color: #eaf2ff;
-      text-align: center;
-      padding: 5rem 2rem;
-    }
-
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .hero button {
-      background-color: #3366ff;
-      color: #fff;
-      padding: 0.8rem 2rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .hero button:hover {
-      background-color: #254eda;
-    }
-
-    /* Footer */
-    .footer {
-      background-color: #fff;
-      padding: 2rem;
-      text-align: center;
-      border-top: 1px solid #ddd;
-      margin-top: 4rem;
-    }
-
-    .footer p {
-      margin-bottom: 0.5rem;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    .footer a {
-      color: #3366ff;
-      text-decoration: none;
-      margin: 0 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-        align-items: flex-end;
-      }
-
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-    }
-  </style>
 </head>
 <body>
 
   <header>
-    <div class="logo-header">
-      <img src="logo1.png" alt="Skillvance Logo">
+    <div class="logo-container">
+      <img src="logo-skillvance.png" alt="Skillvance Logo">
       <div class="header-text">
         <h1>Skillvance</h1>
         <p>A Platform for Upgrading Skill To Advance</p>
       </div>
     </div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Courses</a>
-      <a href="#">Mentoring</a>
-      <a href="#">Blog</a>
-      <a href="#">About</a>
-      <a href="#">Login/Daftar</a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Mentoring</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Login/Daftar</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -171,13 +35,13 @@
     <button>Mulai Sekarang</button>
   </section>
 
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 Skillvance. All Rights Reserved.</p>
-    <p>
-      <a href="#">Privacy Policy</a> | 
-      <a href="#">Terms of Service</a> | 
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
       <a href="#">Contact Us</a>
-    </p>
+    </div>
   </footer>
 
 </body>
