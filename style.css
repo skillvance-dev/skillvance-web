@@ -7,35 +7,45 @@ body {
 
 header {
   background: linear-gradient(to right, #ffffff, #f0f4f8);
-  padding: 5px 50px;
+  padding: 10px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
+  height: 80px; /* Batasi tinggi header */
+  box-sizing: border-box;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .logo-container img {
-  height: 250px; /* Perbesar ukuran logo */
+  height: 45px; /* Ukuran logo diperbaiki */
   width: auto;
 }
 
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .header-text h1 {
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   font-weight: 700;
   color: #333;
+  line-height: 1.2;
 }
 
 .header-text p {
-  font-size: 12px;
+  font-size: 11px;
   margin: 0;
   color: #666;
+  line-height: 1;
 }
 
 nav ul {
@@ -118,6 +128,8 @@ footer {
   header {
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
+    padding: 20px;
   }
 
   nav ul {
