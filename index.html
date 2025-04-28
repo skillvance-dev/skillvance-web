@@ -25,9 +25,10 @@
     </nav>
   </header>
 
-  <!-- Load Swiper CSS -->
+ <!-- Load Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-<!-- CSS Internal -->
+
+  <!-- CSS Internal -->
   <style>
     /* Section Mentor */
     .mentor-section {
@@ -86,6 +87,87 @@
       }
     }
   </style>
+
+</head>
+
+<body>
+
+  <!-- Section Mentor -->
+  <section class="mentor-section">
+    <h2 class="mentor-title">Mentor Kami</h2>
+
+    <div class="swiper mentor-swiper">
+      <div class="swiper-wrapper">
+        <!-- Mentor 1 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 1" class="mentor-photo"/>
+            <h3 class="mentor-name">Rina Andini</h3>
+            <p class="mentor-skill">Lean Manufacturing, Six Sigma</p>
+          </div>
+        </div>
+
+        <!-- Mentor 2 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 2" class="mentor-photo"/>
+            <h3 class="mentor-name">David Pratama</h3>
+            <p class="mentor-skill">Human Resources, Leadership</p>
+          </div>
+        </div>
+
+        <!-- Mentor 3 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 3" class="mentor-photo"/>
+            <h3 class="mentor-name">Lina Kurniawan</h3>
+            <p class="mentor-skill">HSE Management, Safety Compliance</p>
+          </div>
+        </div>
+
+        <!-- Mentor 4 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 4" class="mentor-photo"/>
+            <h3 class="mentor-name">Ahmad Subekti</h3>
+            <p class="mentor-skill">TPM, Continuous Improvement</p>
+          </div>
+        </div>
+
+        <!-- Mentor 5 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 5" class="mentor-photo"/>
+            <h3 class="mentor-name">Siti Nurhaliza</h3>
+            <p class="mentor-skill">Design Thinking, Innovation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Load Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Config JS -->
+  <script>
+    var swiper = new Swiper('.mentor-swiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        1024: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1 },
+      }
+    });
+  </script>
+
+</body>
   
   <section class="hero">
     <h1>Skillvance Academy</h1>
