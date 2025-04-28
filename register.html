@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar - Skillvance</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {font-family: 'Poppins', sans-serif; background: #f5f7fa; display: flex; justify-content: center; align-items: center; height: 100vh;}
+    .form-container {background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 400px;}
+    .form-container h2 {text-align: center; margin-bottom: 1rem;}
+    form {display: flex; flex-direction: column;}
+    form input, form select {margin-bottom: 1rem; padding: 10px; border: 1px solid #ccc; border-radius: 6px;}
+    form button {background: #5a4fcf; color: white; padding: 10px; border: none; border-radius: 6px; cursor: pointer;}
+    .checkbox {display: flex; align-items: center; margin-bottom: 1rem;}
+    .checkbox input {margin-right: 8px;}
+    .link {text-align: center; margin-top: 10px; font-size: 0.9rem;}
+    .link a {color: #5a4fcf; text-decoration: none;}
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Daftar Skillvance</h2>
+  <form action="dashboard.html">
+    <input type="text" placeholder="Nama Lengkap" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <input type="password" placeholder="Konfirmasi Password" required>
+    <select required>
+      <option value="">Pilih Role</option>
+      <option value="user">User</option>
+      <option value="mentor">Mentor</option>
+    </select>
+    <div class="checkbox">
+      <input type="checkbox" required>
+      <label>Saya setuju dengan syarat dan ketentuan</label>
+    </div>
+    <button type="submit">Daftar</button>
+  </form>
+  <div class="link">
+    Sudah punya akun? <a href="login.html">Login di sini</a>
+  </div>
+</div>
+
+</body>
+</html>
