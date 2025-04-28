@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Skillvance</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Poppins', sans-serif; background: #f5f7fa; color: #333;}
+    header {display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    .logo img {height: 40px;}
+    nav a {margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;}
+    .dashboard-container {display: grid; grid-template-columns: 250px 1fr; min-height: 100vh;}
+    .sidebar {background: #5a4fcf; color: #fff; padding: 2rem 1rem; display: flex; flex-direction: column;}
+    .sidebar a {color: #fff; text-decoration: none; margin: 1rem 0; font-weight: 600;}
+    .sidebar a:hover {text-decoration: underline;}
+    .main-content {padding: 2rem; background: #f5f7fa;}
+    .welcome {font-size: 1.5rem; margin-bottom: 2rem;}
+    .card-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;}
+    .card {background: #fff; padding: 1rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s;}
+    .card:hover {transform: translateY(-5px);}
+    .card h3 {margin-bottom: 1rem;}
+    footer {text-align: center; padding: 1.5rem; font-size: 0.8rem; color: #777; background: #fff;}
+    .btn-logout {background: #fff; color: #5a4fcf; border: 2px solid #fff; padding: 10px; margin-top: auto; border-radius: 8px; cursor: pointer; font-weight: 600;}
+    .btn-logout:hover {background: #5a4fcf; color: #fff;}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="your-logo.png" alt="Skillvance Logo">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Mentoring</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="#">Profil Saya</a>
+    <a href="#">Kursus Saya</a>
+    <a href="#">Mentoring</a>
+    <a href="#">Pengaturan</a>
+    <button class="btn-logout" onclick="logout()">Logout</button>
+  </aside>
+
+  <main class="main-content">
+    <div class="welcome">Selamat Datang, [Nama User]</div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Kursus Aktif</h3>
+        <p>2 Kursus sedang berjalan</p>
+      </div>
+      <div class="card">
+        <h3>Progress Mentoring</h3>
+        <p>1 sesi mentoring minggu ini</p>
+      </div>
+      <div class="card">
+        <h3>Notifikasi</h3>
+        <p>3 pemberitahuan baru</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  &copy; 2025 Skillvance. All Rights Reserved.
+</footer>
+
+<script>
+function logout() {
+  alert('Anda berhasil logout!');
+  window.location.href = 'index.html'; // Kembali ke landing page
+}
+</script>
+
+</body>
+</html>
