@@ -9,49 +9,136 @@
     * {margin: 0; padding: 0; box-sizing: border-box;}
     body {font-family: 'Poppins', sans-serif; background: #f5f7fa; color: #333;}
 
-    header {display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000;}
-    header nav a {margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;}
-    .btn-login, .btn-register {padding: 8px 16px; border: none; border-radius: 8px; margin-left: 10px; cursor: pointer; font-weight: 600;}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: 70px;
+    }
+    header nav a {
+      margin: 0 0.8rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .btn-login, .btn-register {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      margin-left: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
     .btn-login {background: transparent; border: 2px solid #5a4fcf; color: #5a4fcf;}
     .btn-register {background: #5a4fcf; color: white;}
+    .logo img {height: 40px;}
 
-    .main-container {display: flex; min-height: 90vh;}
-    .left-side {flex: 1; background: linear-gradient(135deg, #5a4fcf, #8a79ff); color: white; padding: 3rem; display: flex; flex-direction: column; justify-content: center;}
+    .main-container {
+      display: flex;
+      min-height: calc(100vh - 70px);
+    }
+    .left-side {
+      flex: 1;
+      background: linear-gradient(135deg, #5a4fcf, #8a79ff);
+      color: white;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .left-side h1 {font-size: 2rem; margin-bottom: 1.5rem;}
     .feature {display: flex; align-items: center; margin-bottom: 1rem;}
     .feature i {font-size: 1.5rem; margin-right: 1rem; background: white; color: #5a4fcf; padding: 8px; border-radius: 50%;}
 
-    .right-side {flex: 1; background: #fff; display: flex; justify-content: center; align-items: center; padding: 2rem;}
-    .form-container {width: 100%; max-width: 400px;}
+    .right-side {
+      flex: 1;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+    }
 
     .form-container h2 {text-align: center; margin-bottom: 20px;}
     .social-buttons {display: flex; justify-content: space-between; margin-bottom: 1rem;}
-    .social-buttons button {flex: 1; padding: 10px; margin: 0 5px; border: 1px solid #ccc; background: white; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;}
+    .social-buttons button {
+      flex: 1;
+      padding: 10px;
+      margin: 0 5px;
+      border: 1px solid #ccc;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .social-buttons button i {margin-right: 8px;}
 
     form {display: flex; flex-direction: column;}
-    form input {padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px;}
-    form label {margin-top: 12px; font-weight: 600;}
-    form button[type="submit"] {padding: 10px; background: #5a4fcf; color: white; border: none; border-radius: 8px; cursor: pointer; margin-top: 15px;}
+    form input {
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form label {
+      margin-top: 12px;
+      font-weight: 600;
+    }
+    form button[type="submit"] {
+      padding: 10px;
+      background: #5a4fcf;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
 
-    .form-footer {text-align: center; margin-top: 1rem; font-size: 0.9rem;}
-    .form-footer a {color: #5a4fcf; text-decoration: none;}
+    .form-footer {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.9rem;
+    }
+    .form-footer a {
+      color: #5a4fcf;
+      text-decoration: none;
+    }
 
-    footer {text-align: center; padding: 2rem; font-size: 0.8rem; color: #777; background: #fff; margin-top: auto;}
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #777;
+      background: #fff;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo"><img src="logo1.png" alt="Skillvance Logo" style="height:250px;"></div>
+  <div class="logo">
+    <img src="your-logo.png" alt="Skillvance Logo">
+  </div>
   <nav>
-    <a href="#">Home</a>
+    <a href="index.html">Home</a>
     <a href="#">Courses</a>
     <a href="#">Mentoring</a>
     <a href="#">Blog</a>
     <a href="#">About</a>
-    <button class="btn-login">Login</button>
-    <button class="btn-register">Daftar</button>
+    <a href="login.html" class="btn-login">Login</a>
+    <a href="register.html" class="btn-register">Daftar</a>
   </nav>
 </header>
 
@@ -89,10 +176,11 @@
         <input type="password" id="password" name="password" required>
 
         <button type="submit">Login</button>
+
+        <div class="form-footer">
+          Belum punya akun? <a href="register.html">Daftar di sini</a>
+        </div>
       </form>
-      <div class="form-footer">
-        Belum punya akun? <a href="#">Daftar Sekarang</a>
-      </div>
     </div>
   </div>
 </section>
