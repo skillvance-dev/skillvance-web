@@ -137,3 +137,62 @@ footer {
   text-decoration: underline;
 }
 
+/* Responsive untuk layar kecil (HP) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 5%;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .mentor-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mentor-card {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}
