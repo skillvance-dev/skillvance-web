@@ -1,53 +1,73 @@
-/* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+/* style.css */
 body {
-  background-color: #f7f8fc;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f8ff;
 }
 
-/* Header */
 header {
+  background: linear-gradient(to right, #ffffff, #f0f4f8);
+  padding: 10px 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: #ffffff;
+  justify-content: space-between;
   border-bottom: 1px solid #ddd;
+  height: 80px; /* Batasi tinggi header */
+  box-sizing: border-box;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, #ffffff, #f0f4f8);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  height: 80px;
+  box-sizing: border-box;
+}
+
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .logo-container img {
-  height: 40px;
-  margin-right: 10px;
+  height: 250px; /* Ukuran logo diperbaiki */
+  width: auto;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-text h1 {
-  font-size: 24px;
-  color: #4a38f2;
-  margin-bottom: 2px;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
 }
 
 .header-text p {
-  font-size: 12px;
-  color: #555;
+  font-size: 11px;
+  margin: 0;
+  color: #666;
+  line-height: 1;
 }
 
-/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -58,137 +78,49 @@ nav a {
 }
 
 nav a:hover {
-  color: #4a38f2;
+  color: #007bff;
 }
 
-nav a[href$="login.html"],
-nav a[href$="register.html"] {
-  background-color: #4a38f2;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 5px;
-}
-
-nav a[href$="login.html"]:hover,
-nav a[href$="register.html"]:hover {
-  background-color: #372ad3;
-}
-
-/* Hero section */
 .hero {
-  background: linear-gradient(to right, #4a38f2, #6f65ff);
-  color: white;
   text-align: center;
   padding: 100px 20px;
+  background-color: #e8f0fe;
 }
 
 .hero h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 18px;
   margin-bottom: 30px;
+  color: #555;
 }
 
 .hero button {
-  padding: 12px 25px;
-  font-size: 16px;
-  background-color: white;
-  color: #4a38f2;
+  background-color: #2962ff;
+  color: white;
   border: none;
-  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .hero button:hover {
-  background-color: #eae7ff;
+  background-color: #0039cb;
 }
 
-/* Section umum */
-.section {
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 28px;
-  color: #4a38f2;
-  margin-bottom: 30px;
-}
-
-.section-description {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-/* Mentor cards */
-.mentor-cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.mentor-card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  padding: 20px;
-  width: 250px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.mentor-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.mentor-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.mentor-card h3 {
-  font-size: 18px;
-  color: #222;
-}
-
-.mentor-card p {
-  font-size: 14px;
-  color: #666;
-}
-
-/* Call-to-action buttons in section */
-.section button {
-  padding: 10px 22px;
-  font-size: 15px;
-  background-color: #4a38f2;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s;
-}
-
-.section button:hover {
-  background-color: #372ad3;
-}
-
-/* Footer */
 footer {
-  background-color: #f1f1f1;
+  background: linear-gradient(to right, #f0f4f8, #ffffff);
   text-align: center;
-  padding: 25px 10px;
+  padding: 30px 20px;
   font-size: 14px;
   color: #666;
+  border-top: 1px solid #ddd;
 }
 
 .footer-links {
@@ -196,12 +128,35 @@ footer {
 }
 
 .footer-links a {
-  color: #4a38f2;
   margin: 0 10px;
   text-decoration: none;
-  transition: color 0.3s;
+  color: #2962ff;
 }
 
 .footer-links a:hover {
-  color: #000;
+  text-decoration: underline;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
 }
