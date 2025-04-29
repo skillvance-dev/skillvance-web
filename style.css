@@ -137,3 +137,57 @@ footer {
   text-decoration: underline;
 }
 
+/* ===== Form Styling ===== */
+.form-container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-box input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #2962ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0039cb;
+}
+
+.form-footer {
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.form-footer a {
+  color: #2962ff;
+  text-decoration: none;
+}
