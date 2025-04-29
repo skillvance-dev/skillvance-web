@@ -3,76 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skillvance</title>
+  <title>Skillvance Academy</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+  
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo1.png" alt="Skillvance Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Mentoring</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <!-- Navbar Buttons -->
+        <div class="auth-buttons">
+          <button class="btn-login" onclick="location.href='login.html'">Login</button>
+          <button class="btn-register" onclick="location.href='register.html'">Daftar</button>
+        </div>
+        
+        <style>
+        .auth-buttons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        }
+
+        .btn-login {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        font-size: 14px;
+        color: #333;
+        background: transparent;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s ease;
+        }
+
+        .btn-login:hover {
+        background-color: #f0f0f0;
+        }
+
+        .btn-register {
+        display: flex;
+        align-items: center;
+        padding: 8px 18px;
+        font-size: 14px;
+        background: #5b4ce9;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s ease;
+        }
+
+        .btn-register:hover {
+        background: #483ac7;
+        }
+
+        .btn-login i,
+        .btn-register i {
+          margin-right: 8px;
+        }
+        </style>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Load Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+  <!-- CSS Internal -->
+  <style>
+    /* Section Mentor */
+    .mentor-section {
+      padding: 60px 20px;
+      background: #f7faff;
+      text-align: center;
+    }
+
+    .mentor-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .mentor-card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .mentor-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .mentor-photo {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .mentor-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .mentor-skill {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .mentor-card {
+        padding: 15px;
+      }
+      .mentor-photo {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+
 </head>
+
 <body>
 
-<header>
-  <div class="logo-container">
-    <img src="your-logo.png" alt="Skillvance Logo">
-    <div class="header-text">
-      <h1>Skillvance</h1>
-      <p>A Platform for Upgrading Skill to Advance</p>
-    </div>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="mentoring.html">Mentoring</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="register.html">Daftar</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- Section Mentor -->
+  <section class="mentor-section">
+    <h2 class="mentor-title">Mentor Kami</h2>
 
-<main class="hero">
-  <h1>Selamat Datang di Skillvance</h1>
-  <p>Platform pembelajaran modern dengan akses ke berbagai pelatihan profesional</p>
-  <button onclick="location.href='courses.html'">Mulai Sekarang</button>
-</main>
+    <div class="swiper mentor-swiper">
+      <div class="swiper-wrapper">
+        <!-- Mentor 1 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 1" class="mentor-photo"/>
+            <h3 class="mentor-name">Rina Andini</h3>
+            <p class="mentor-skill">Lean Manufacturing, Six Sigma</p>
+          </div>
+        </div>
 
-<section class="section">
-  <h2 class="section-title">Mentor Kami</h2>
-  <div class="mentor-cards">
-    <div class="mentor-card">
-      <img src="mentor2.jpg" alt="Mentor 2">
-      <h3>David Pratama</h3>
-      <p>Human Resources, Leadership</p>
-    </div>
-    <div class="mentor-card">
-      <img src="mentor3.jpg" alt="Mentor 3">
-      <h3>Lina Kurniawan</h3>
-      <p>HSE Management, Safety Compliance</p>
-    </div>
-    <div class="mentor-card">
-      <img src="mentor4.jpg" alt="Mentor 4">
-      <h3>Ahmad Subekti</h3>
-      <p>TPM, Continuous Improvement</p>
-    </div>
-  </div>
-</section>
+        <!-- Mentor 2 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 2" class="mentor-photo"/>
+            <h3 class="mentor-name">David Pratama</h3>
+            <p class="mentor-skill">Human Resources, Leadership</p>
+          </div>
+        </div>
 
-<section class="section">
-  <h2 class="section-title">Skillvance Academy</h2>
-  <p class="section-description">
-    Platform pelatihan modern untuk Lean, TPM, Six Sigma, HR, HSE, QC Tools, dan banyak lagi.
-  </p>
-  <button onclick="location.href='register.html'">Mulai Sekarang</button>
-</section>
+        <!-- Mentor 3 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 3" class="mentor-photo"/>
+            <h3 class="mentor-name">Lina Kurniawan</h3>
+            <p class="mentor-skill">HSE Management, Safety Compliance</p>
+          </div>
+        </div>
 
-<footer>
-  &copy; 2025 Skillvance. All Rights Reserved.<br>
-  <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">Contact Us</a>
-  </div>
-</footer>
+        <!-- Mentor 4 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 4" class="mentor-photo"/>
+            <h3 class="mentor-name">Ahmad Subekti</h3>
+            <p class="mentor-skill">TPM, Continuous Improvement</p>
+          </div>
+        </div>
+
+        <!-- Mentor 5 -->
+        <div class="swiper-slide">
+          <div class="mentor-card">
+            <img src="https://via.placeholder.com/100" alt="Mentor 5" class="mentor-photo"/>
+            <h3 class="mentor-name">Siti Nurhaliza</h3>
+            <p class="mentor-skill">Design Thinking, Innovation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Load Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Config JS -->
+  <script>
+    var swiper = new Swiper('.mentor-swiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        1024: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1 },
+      }
+    });
+  </script>
+
+</body>
+  
+  <section class="hero">
+    <h1>Skillvance Academy</h1>
+    <p>Platform pelatihan modern untuk Lean, TPM, Six Sigma, HR, HSE, QC Tools, dan banyak lagi.</p>
+    <button>Mulai Sekarang</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Skillvance. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </footer>
 
 </body>
 </html>
