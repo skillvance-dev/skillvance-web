@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daftar - Skillvance</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {font-family: 'Poppins', sans-serif; background: #f5f7fa; display: flex; justify-content: center; align-items: center; height: 100vh;}
-    .form-container {background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 400px;}
-    .form-container h2 {text-align: center; margin-bottom: 1rem;}
-    form {display: flex; flex-direction: column;}
-    form input, form select {margin-bottom: 1rem; padding: 10px; border: 1px solid #ccc; border-radius: 6px;}
-    form button {background: #5a4fcf; color: white; padding: 10px; border: none; border-radius: 6px; cursor: pointer;}
-    .checkbox {display: flex; align-items: center; margin-bottom: 1rem;}
-    .checkbox input {margin-right: 8px;}
-    .link {text-align: center; margin-top: 10px; font-size: 0.9rem;}
-    .link a {color: #5a4fcf; text-decoration: none;}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar | Skillvance</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="form-container">
-  <h2>Daftar Skillvance</h2>
-  <form action="dashboard.html">
-    <input type="text" placeholder="Nama Lengkap" required>
-    <input type="email" placeholder="Email" required>
-    <input type="password" placeholder="Password" required>
-    <input type="password" placeholder="Konfirmasi Password" required>
-    <select required>
-      <option value="">Pilih Role</option>
-      <option value="user">User</option>
-      <option value="mentor">Mentor</option>
-    </select>
-    <div class="checkbox">
-      <input type="checkbox" required>
-      <label>Saya setuju dengan syarat dan ketentuan</label>
+<header>
+  <div class="logo-container">
+    <img src="your-logo.png" alt="Skillvance Logo">
+    <div class="header-text">
+      <h1>Skillvance</h1>
+      <p>A Platform for Upgrading Skill to Advance</p>
     </div>
-    <button type="submit">Daftar</button>
-  </form>
-  <div class="link">
-    Sudah punya akun? <a href="login.html">Login di sini</a>
   </div>
-</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="mentoring.html">Mentoring</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html" class="active">Daftar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="form-container">
+  <h1>Daftar Akun</h1>
+  <form action="proses-register.php" method="POST" class="form-box">
+    <label for="name">Nama Lengkap</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Kata Sandi</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm-password">Konfirmasi Kata Sandi</label>
+    <input type="password" id="confirm-password" name="confirm_password" required>
+
+    <button type="submit" class="btn-primary">Daftar</button>
+
+    <p class="form-footer">Sudah punya akun? <a href="login.html">Login di sini</a></p>
+  </form>
+</main>
+
+<footer>
+  &copy; 2025 Skillvance. All Rights Reserved.<br>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Contact Us</a>
+  </div>
+</footer>
 
 </body>
 </html>
