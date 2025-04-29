@@ -1,63 +1,153 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar | Skillvance</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daftar Akun - Skillvance</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .left .feature {
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .left .feature i {
+      font-size: 20px;
+    }
+
+    .right {
+      flex: 1;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .form-box {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      width: 100%;
+      padding: 12px;
+      background-color: #5c6bc0;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #3f51b5;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .form-footer a {
+      color: #5c6bc0;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .right {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="left">
+      <h2>Gabung dengan Skillvance</h2>
+      <div class="feature">
+        <i class="fa fa-video-camera"></i>
+        <div>
+          <strong>Pembelajaran Langsung</strong><br />
+          Interaksi real-time dengan instruktur berpengalaman.
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fa fa-comments"></i>
+        <div>
+          <strong>Real-time Q&A</strong><br />
+          Diskusi dan tanya jawab selama sesi berlangsung.
+        </div>
+      </div>
+    </div>
 
-<header>
-  <div class="logo-container">
-    <img src="your-logo.png" alt="Skillvance Logo">
-    <div class="header-text">
-      <h1>Skillvance</h1>
-      <p>A Platform for Upgrading Skill to Advance</p>
+    <div class="right">
+      <form class="form-box">
+        <h2>Daftar Akun</h2>
+        <input type="text" placeholder="Nama Lengkap" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Kata Sandi" required />
+        <input type="password" placeholder="Konfirmasi Kata Sandi" required />
+        <button type="submit" class="btn-primary">Daftar</button>
+        <p class="form-footer">
+          Sudah punya akun? <a href="login.html">Login di sini</a>
+        </p>
+      </form>
     </div>
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="mentoring.html">Mentoring</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="register.html" class="active">Daftar</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main class="form-container">
-  <h1>Daftar Akun</h1>
-  <form action="proses-register.php" method="POST" class="form-box">
-    <label for="name">Nama Lengkap</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="password">Kata Sandi</label>
-    <input type="password" id="password" name="password" required>
-
-    <label for="confirm-password">Konfirmasi Kata Sandi</label>
-    <input type="password" id="confirm-password" name="confirm_password" required>
-
-    <button type="submit" class="btn-primary">Daftar</button>
-
-    <p class="form-footer">Sudah punya akun? <a href="login.html">Login di sini</a></p>
-  </form>
-</main>
-
-<footer>
-  &copy; 2025 Skillvance. All Rights Reserved.<br>
-  <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">Contact Us</a>
-  </div>
-</footer>
-
 </body>
 </html>
